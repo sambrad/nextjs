@@ -10,6 +10,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <img src="/Headshot.png" />
         <h1 className={styles.title}>
           Hello! My name is <a href="https://sambrad.vercel.app">Sam Bradley</a>
         </h1>
