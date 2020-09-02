@@ -5,18 +5,19 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Sam Bradley</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Hello! My name is <a href="https://sambrad.vercel.app">Sam Bradley</a>
         </h1>
 
         <p className={styles.description}>
-          This is a test - Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          I am a Junior at Indiana University's Luddy School of Informatics & Computing
+          <br/>
+          Studying Computer Science and Finance
         </p>
 
         <div className={styles.grid}>
