@@ -23,7 +23,7 @@ export default function Home() {
       </div>
 
       <main className={styles.main}>
-        <img src="/Headshot.png" style={{ width: '14rem',
+        <img src="/headshot.PNG" style={{ width: '14rem',
                                           height: '14rem',
                                           border: "5px solid black",
                                           borderRadius: '50%',
