@@ -10,10 +10,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <Link href="/projects">
-          <a>Project</a>
+      <div className={styles.mainHeader}>
+        <Link href="/">
+          <a>Home</a>
         </Link>
+        <Link href="/about">
+          <a>About Me</a>
+        </Link>
+        <Link href="/contact">
+          <a>Contact</a>
+        </Link>
+      </div>
+
+      <main className={styles.main}>
         <img src="/Headshot.png" style={{ width: '14rem',
                                           height: '14rem',
                                           border: "5px solid black",
@@ -21,9 +30,7 @@ export default function Home() {
                                           marginBottom: 10}} />
 
         <div style={{ display: "flex", flexDirection: "row", marginBottom: 20}}>
-          <h1 className={styles.title}>Hello! My name is</h1>
-          <div name="gap" style={{width: 20}}></div>
-          <h1 className={styles.nameGradient}>Sam Bradley</h1>
+          <h1 className={styles.title}>Hello! My name is <span className={styles.nameGradient}>Sam Bradley</span></h1>
         </div>
 
         <p className={styles.description}>
@@ -40,28 +47,26 @@ export default function Home() {
             </a>
           </Link>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Link href="/experiences">
+            <a className={styles.card}>
+              <h3>Professional Experience &rarr;</h3>
+              <p>My past work experiences.</p>
+            </a>
+          </Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <Link href="/resume">
+            <a className={styles.card}>
+              <h3>Downloadable Resume &rarr;</h3>
+              <p>Download my resume!</p>
+            </a>
+          </Link>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Link href="/cases">
+            <a className={styles.card}>
+              <h3>Case Competitons &rarr;</h3>
+              <p>View the case competitions I have participated in!</p>
+            </a>
+          </Link>
         </div>
       </main>
 

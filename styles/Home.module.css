@@ -3,8 +3,11 @@
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  background-image: url("/main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nameGradient {
@@ -16,17 +19,86 @@
   -webkit-text-fill-color: transparent;
 }
 
+.mainHeader {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.mainHeader a {
+  font-size: 1.25rem;
+  position: relative;
+  color: white;
+}
+
+.mainHeader a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.mainHeader a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.mainHeader a:hover {
+  background-image: url("/movement.png");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.header a {
+  font-size: 1.25rem;
+  position: relative;
+  color: white;
+}
+
+.header a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.header a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 .main {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/main.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .footer {
@@ -36,6 +108,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .footer img {
@@ -72,7 +145,7 @@
 }
 
 .description {
-  line-height: 1.5;
+  line-height: 1.3;
   font-size: 1.5rem;
   color: white;
 }
@@ -101,19 +174,21 @@
   flex-basis: 45%;
   padding: 1.5rem;
   text-align: left;
-  color: white;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+
+  color: white;
+  transition: all 1s ease;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #66FFCC;
-  border-color: #66FFCC;
-  background-blend-mode: color;
+  color: white;
+  border-color: white;
+  background-image: url("/movement.png");
+  background-position: 0 100%;
 }
 
 .card h3 {
@@ -136,4 +211,71 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+
+/*
+  Everything Below is for the Projects Page
+*/
+
+.projectContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/movement.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.projectTitle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  text-align: center;
+  justify-content: center;
+}
+
+.projectList {
+  background: #666;
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  width: 110%;
+  height: 50vh;
+  overflow: hidden;
+  border-top: 3px solid black;
+}
+
+.one {
+  border-right: 3px solid black;
+  width: 40%;
+  float: left;
+  height: 100%;
+  background: #666;
+  position: relative;
+  transform: skew(-9deg);
+}
+
+.two {
+  width: 60%;
+  float: left;
+  height: 100%;
+  background: #999;
+  transform: skew(-9deg);
+  position: relative;
+}
+
+.projectContent {
+  transform: skew(9deg);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.project img {
+  height: 10rem;
 }
