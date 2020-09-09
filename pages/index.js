@@ -23,7 +23,7 @@ export default function Home() {
       </div>
 
       <main className={styles.main}>
-        <img src="/blockchainatiu.png" style={{ width: '14rem',
+        <img src="/headshot.jpg" style={{ width: '14rem',
                                           height: '14rem',
                                           border: "5px solid black",
                                           borderRadius: '50%',
