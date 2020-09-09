@@ -2,8 +2,8 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
-export default function Home() {
-  return (
+export default function Projects() {
+  return(
     <div className={styles.container}>
       <Head>
         <title>Sam Bradley</title>
@@ -11,34 +11,21 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Link href="/projects">
-          <a>Project</a>
+        <Link href="/">
+          <a>Home</a>
         </Link>
-        <img src="/Headshot.png" style={{ width: '14rem',
-                                          height: '14rem',
-                                          border: "5px solid black",
-                                          borderRadius: '50%',
-                                          marginBottom: 10}} />
-
         <div style={{ display: "flex", flexDirection: "row", marginBottom: 20}}>
-          <h1 className={styles.title}>Hello! My name is</h1>
-          <div name="gap" style={{width: 20}}></div>
-          <h1 className={styles.nameGradient}>Sam Bradley</h1>
+          <h1 className={styles.title}>My Projects</h1>
         </div>
-
         <p className={styles.description}>
-          I am a Junior at Indiana University's Luddy School of Informatics & Computing
-          <br/>
-          Studying Computer Science and Finance
+          Below are some projects I have worked on.
         </p>
 
         <div className={styles.grid}>
-          <Link href="/projects">
-            <a className={styles.card}>
-              <h3>My Projects &rarr;</h3>
-              <p>View some of the work I have done!</p>
-            </a>
-          </Link>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h3>Documentation &rarr;</h3>
+            <p>Find in-depth information about Next.js features and API.</p>
+          </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h3>Learn &rarr;</h3>
