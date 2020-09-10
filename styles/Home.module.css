@@ -20,7 +20,7 @@
 }
 
 .mainHeader {
-  width: 50vh;
+  width: 40vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -61,7 +61,7 @@
 }
 
 .header {
-  width: 50vh;
+  width: 40vh;
   display: flex;
   justify-content: space-between;
 
