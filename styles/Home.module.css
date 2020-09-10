@@ -20,12 +20,12 @@
 }
 
 .mainHeader {
-  width: 40vh;
+  width: 30vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  padding-left: 2vh;
+  padding-left: 2vw;
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
@@ -61,11 +61,11 @@
 }
 
 .header {
-  width: 40vh;
+  width: 30vw;
   display: flex;
   justify-content: space-between;
 
-  padding-left: 2vh;
+  padding-left: 2vw;
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
@@ -225,7 +225,7 @@
   flex-direction: column;
   background-image: url("/movement.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -233,7 +233,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  height: 50%;
   text-align: center;
   justify-content: center;
 }
@@ -245,7 +244,7 @@
 }
 
 .project {
-  width: 110%;
+  width: 100vw;
   height: 50vh;
   overflow: hidden;
   border-top: 3px solid black;
@@ -253,18 +252,18 @@
 
 .one {
   border-right: 3px solid black;
-  width: 40%;
+  width: 40vw;
   float: left;
-  height: 100%;
+  height: 100vh;
   background: #666;
   position: relative;
   transform: skew(-9deg);
 }
 
 .two {
-  width: 60%;
+  width: 60vw;
   float: left;
-  height: 100%;
+  height: 100vh;
   background: #999;
   transform: skew(-9deg);
   position: relative;
