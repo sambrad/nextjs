@@ -20,13 +20,14 @@
 }
 
 .mainHeader {
-  width: 30%;
+  width: 50vh;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 
-  padding-left: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-left: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .mainHeader a {
@@ -60,13 +61,13 @@
 }
 
 .header {
-  width: 30%;
+  width: 50vh;
   display: flex;
   justify-content: space-between;
 
-  padding-left: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-left: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .header a {
