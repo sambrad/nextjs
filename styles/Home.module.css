@@ -11,9 +11,8 @@
 }
 
 .nameGradient {
-  margin: 0;
   line-height: 1.3;
-  font-size: 4rem;
+  font-size: 5vw;
   background-image: url("/movement.png");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -100,6 +99,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 5vh;
 }
 
 .footer {
@@ -134,9 +134,8 @@
 }
 
 .title {
-  margin: 0;
   line-height: 1.3;
-  font-size: 4rem;
+  font-size: 5vw;
   color: white;
 }
 

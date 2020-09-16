@@ -10,16 +10,22 @@ export default function Resume() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={style.header} id="navbar">
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-        <Link href="/about">
-          <a>About Me</a>
-        </Link>
-        <Link href="/contact">
-          <a>Contact</a>
-        </Link>
+      <div class="outer-menu">
+        <input class="checkbox-toggle" type="checkbox" />
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><Link href="/"><a class="a">Home</a></Link></li>
+                <li><Link href="/about"><a class="a">About Me</a></Link></li>
+                <li><Link href="/contact"><a class="a">Contact Me</a></Link></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className={style.projectTitle}>
